@@ -3,13 +3,10 @@ import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 
 export default function Item ({ producto })  {
-
-  return (
-    
+  return (    
 <Card className="imagen">
-
-  <Card.Body>
-    <Card.Title>{producto.name}</Card.Title>
+<Card.Body>
+    <Card.Title className="cart-title">{producto.name}</Card.Title>
 
     <Card.Text className="cardText">
     <Card.Img variant="top" src={producto.img} />
@@ -19,8 +16,7 @@ export default function Item ({ producto })  {
       <br />
       Stock: {producto.stock}
     </Card.Text>
-    <Link to={"/producto/" + producto.id} className="lse botonPrincipal">Ver detalle</Link>
-
+    <Link to={"/producto/" + producto.id} className="boton">Ver detalle</Link>
   </Card.Body>
 </Card>
   )

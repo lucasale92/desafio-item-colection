@@ -8,6 +8,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import NavBar from './components/NavBar';
 import MyProvider from './context/CartContext';
 
+
 export default function App() {
   return ( <>
     <div className="App"> 
